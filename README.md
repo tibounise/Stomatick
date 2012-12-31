@@ -2,6 +2,8 @@
 
 Stomatick is lightweight program to assemble images to make a stop-motion video. 
 
+![Stomatick screenshot](http://i.imgur.com/9VmNe.png)
+
 ## Tests
 
 Stomatick has been tested under :
