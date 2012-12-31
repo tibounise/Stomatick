@@ -1,0 +1,306 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DC47BDF61691D47100DFB164 /* 1356984641_7133.icns in Resources */ = {isa = PBXBuildFile; fileRef = DC47BDF51691D47100DFB164 /* 1356984641_7133.icns */; };
+		DC47BDF91691D4F200DFB164 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = DC47BDF81691D4F100DFB164 /* README.md */; };
+		DCD11AAD1690F0960038E672 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCD11AAC1690F0960038E672 /* Cocoa.framework */; };
+		DCD11AB71690F0960038E672 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DCD11AB51690F0960038E672 /* InfoPlist.strings */; };
+		DCD11AB91690F0960038E672 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DCD11AB81690F0960038E672 /* main.m */; };
+		DCD11ABD1690F0960038E672 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = DCD11ABB1690F0960038E672 /* Credits.rtf */; };
+		DCD11AC01690F0970038E672 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DCD11ABF1690F0970038E672 /* AppDelegate.m */; };
+		DCD11AC31690F0970038E672 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = DCD11AC11690F0970038E672 /* MainMenu.xib */; };
+		DCD11ACA1690F0B00038E672 /* QTKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCD11AC91690F0B00038E672 /* QTKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		DC47BDF51691D47100DFB164 /* 1356984641_7133.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = 1356984641_7133.icns; sourceTree = "<group>"; };
+		DC47BDF81691D4F100DFB164 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		DCD11AA81690F0960038E672 /* Stomatick.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Stomatick.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DCD11AAC1690F0960038E672 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		DCD11AAF1690F0960038E672 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		DCD11AB01690F0960038E672 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		DCD11AB11690F0960038E672 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		DCD11AB41690F0960038E672 /* Stomatick-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Stomatick-Info.plist"; sourceTree = "<group>"; };
+		DCD11AB61690F0960038E672 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DCD11AB81690F0960038E672 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DCD11ABA1690F0960038E672 /* Stomatick-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Stomatick-Prefix.pch"; sourceTree = "<group>"; };
+		DCD11ABC1690F0960038E672 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		DCD11ABE1690F0970038E672 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		DCD11ABF1690F0970038E672 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		DCD11AC21690F0970038E672 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		DCD11AC91690F0B00038E672 /* QTKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QTKit.framework; path = System/Library/Frameworks/QTKit.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DCD11AA51690F0960038E672 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCD11ACA1690F0B00038E672 /* QTKit.framework in Frameworks */,
+				DCD11AAD1690F0960038E672 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DCD11A9D1690F0960038E672 = {
+			isa = PBXGroup;
+			children = (
+				DC47BDF81691D4F100DFB164 /* README.md */,
+				DC47BDF51691D47100DFB164 /* 1356984641_7133.icns */,
+				DCD11AB21690F0960038E672 /* Stomatick */,
+				DCD11AAB1690F0960038E672 /* Frameworks */,
+				DCD11AA91690F0960038E672 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DCD11AA91690F0960038E672 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DCD11AA81690F0960038E672 /* Stomatick.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DCD11AAB1690F0960038E672 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DCD11AC91690F0B00038E672 /* QTKit.framework */,
+				DCD11AAC1690F0960038E672 /* Cocoa.framework */,
+				DCD11AAE1690F0960038E672 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DCD11AAE1690F0960038E672 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DCD11AAF1690F0960038E672 /* AppKit.framework */,
+				DCD11AB01690F0960038E672 /* CoreData.framework */,
+				DCD11AB11690F0960038E672 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		DCD11AB21690F0960038E672 /* Stomatick */ = {
+			isa = PBXGroup;
+			children = (
+				DCD11ABE1690F0970038E672 /* AppDelegate.h */,
+				DCD11ABF1690F0970038E672 /* AppDelegate.m */,
+				DCD11AC11690F0970038E672 /* MainMenu.xib */,
+				DCD11AB31690F0960038E672 /* Supporting Files */,
+			);
+			path = Stomatick;
+			sourceTree = "<group>";
+		};
+		DCD11AB31690F0960038E672 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DCD11AB41690F0960038E672 /* Stomatick-Info.plist */,
+				DCD11AB51690F0960038E672 /* InfoPlist.strings */,
+				DCD11AB81690F0960038E672 /* main.m */,
+				DCD11ABA1690F0960038E672 /* Stomatick-Prefix.pch */,
+				DCD11ABB1690F0960038E672 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DCD11AA71690F0960038E672 /* Stomatick */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DCD11AC61690F0970038E672 /* Build configuration list for PBXNativeTarget "Stomatick" */;
+			buildPhases = (
+				DCD11AA41690F0960038E672 /* Sources */,
+				DCD11AA51690F0960038E672 /* Frameworks */,
+				DCD11AA61690F0960038E672 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Stomatick;
+			productName = Stomatick;
+			productReference = DCD11AA81690F0960038E672 /* Stomatick.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DCD11A9F1690F0960038E672 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = DCD11AA21690F0960038E672 /* Build configuration list for PBXProject "Stomatick" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = DCD11A9D1690F0960038E672;
+			productRefGroup = DCD11AA91690F0960038E672 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DCD11AA71690F0960038E672 /* Stomatick */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DCD11AA61690F0960038E672 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCD11AB71690F0960038E672 /* InfoPlist.strings in Resources */,
+				DCD11ABD1690F0960038E672 /* Credits.rtf in Resources */,
+				DCD11AC31690F0970038E672 /* MainMenu.xib in Resources */,
+				DC47BDF61691D47100DFB164 /* 1356984641_7133.icns in Resources */,
+				DC47BDF91691D4F200DFB164 /* README.md in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DCD11AA41690F0960038E672 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCD11AB91690F0960038E672 /* main.m in Sources */,
+				DCD11AC01690F0970038E672 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		DCD11AB51690F0960038E672 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DCD11AB61690F0960038E672 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		DCD11ABB1690F0960038E672 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DCD11ABC1690F0960038E672 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		DCD11AC11690F0970038E672 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DCD11AC21690F0970038E672 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DCD11AC41690F0970038E672 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		DCD11AC51690F0970038E672 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		DCD11AC71690F0970038E672 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Stomatick/Stomatick-Prefix.pch";
+				INFOPLIST_FILE = "Stomatick/Stomatick-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		DCD11AC81690F0970038E672 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Stomatick/Stomatick-Prefix.pch";
+				INFOPLIST_FILE = "Stomatick/Stomatick-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DCD11AA21690F0960038E672 /* Build configuration list for PBXProject "Stomatick" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCD11AC41690F0970038E672 /* Debug */,
+				DCD11AC51690F0970038E672 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DCD11AC61690F0970038E672 /* Build configuration list for PBXNativeTarget "Stomatick" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCD11AC71690F0970038E672 /* Debug */,
+				DCD11AC81690F0970038E672 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DCD11A9F1690F0960038E672 /* Project object */;
+}
