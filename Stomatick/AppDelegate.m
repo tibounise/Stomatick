@@ -77,6 +77,9 @@
     [runButton setEnabled:NO];
     [fpsSlider setEnabled:NO];
     [pathButton setEnabled:NO];
+    
+    // Close the player window
+    [playerWindow close];
 
     NSError *error = nil;
     
