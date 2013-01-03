@@ -12,11 +12,10 @@
 @interface AppDelegate : NSObject <NSApplicationDelegate> {
     QTMovie *movie;
     NSURL *path;
-    NSString *fileName;
     NSImage *image;
     NSDictionary *imageAttributes;
     NSString *savePath;
-    int build;
+    NSThread *buildThread;
 }
 
 @property (assign) IBOutlet NSWindow *window;
@@ -27,6 +26,10 @@
 @property (assign) IBOutlet NSPanel *playerWindow;
 @property (assign) IBOutlet NSPanel *progressWindow;
 @property (assign) IBOutlet NSProgressIndicator *progressBar;
+@property (assign) IBOutlet NSButton *runButton;
+@property (assign) IBOutlet NSButton *buildButton;
+@property (assign) IBOutlet NSButton *saveButton;
+@property (assign) IBOutlet NSButton *pathButton;
 
 - (IBAction)pathChoose:(id)sender;
 - (IBAction)runAnimation:(id)sender;
@@ -34,5 +37,7 @@
 - (IBAction)saveAnimation:(id)sender;
 - (IBAction)moveFpsSlider:(id)sender;
 - (IBAction)cancelBuild:(id)sender;
+
+-(void)buildProcess;
 
 @end
