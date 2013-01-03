@@ -29,6 +29,8 @@
 	
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
     path = nil;
+
+    // Enable/disable buttons and sliders to their default value
     [saveButton setEnabled:NO];
     [runButton setEnabled:NO];
     [buildButton setEnabled:YES];
@@ -64,7 +66,9 @@
 }
 
 - (IBAction)buildAnimation:(id)sender {
-    buildThread = [[NSThread alloc] initWithTarget:self selector:@selector(buildProcess) object:nil];
+    buildThread = [[NSThread alloc] initWithTarget:self
+                                    selector:@selector(buildProcess)
+                                    object:nil];
     [buildThread start];
 }
 
@@ -94,7 +98,6 @@
     if (error != nil) {
         [[NSAlert alertWithError:error] runModal];
     } else {
-    
         NSArray *allowedExtension = [NSImage imageTypes];
         NSMutableArray *usedFiles = [NSMutableArray array];
         
@@ -120,7 +123,6 @@
             [alert runModal];
             [alert release];
         } else {
-        
             // Show the progress window
             [progressWindow makeKeyAndOrderFront:0];
             
@@ -144,7 +146,9 @@
             while (![buildThread isCancelled] && i < usedFiles.count) {
                 NSString *fileLocation = [NSString stringWithFormat:@"%@/%@",[path path],[usedFiles objectAtIndex:i]];
                 image = [[[NSImage alloc] initByReferencingFile:fileLocation] autorelease];
-                [movie addImage:image forDuration:time withAttributes:imageAttributes];
+                [movie addImage:image
+                       forDuration:time
+                       withAttributes:imageAttributes];
                 [progressBar setDoubleValue:i];
                 i++;
             }
@@ -158,9 +162,7 @@
                 [saveButton setEnabled:YES];
                 [runButton setEnabled:YES];
             }
-
         }
-        
     }
    
     // Closes the progress window
@@ -176,7 +178,7 @@
 }
 
 - (IBAction)saveAnimation:(id)sender {
-    if (movie == nil) {
+    if (movie == nil) { // If we haven't built an animation
         NSAlert *alert = [[NSAlert alloc] init];
         [alert addButtonWithTitle:@"Close"];
         [alert setMessageText:@"No animation built"];
@@ -188,7 +190,9 @@
         NSSavePanel *savePanel = [NSSavePanel savePanel];
         [savePanel setRequiredFileType:@"mov"];
         if ([savePanel runModal] == NSOKButton) {
-            [movie writeToFile:[savePanel filename] withAttributes:[NSDictionary dictionaryWithObject:[NSNumber numberWithBool:YES] forKey:QTMovieFlatten] error:nil];
+            [movie writeToFile:[savePanel filename]
+                   withAttributes:[NSDictionary dictionaryWithObject:[NSNumber numberWithBool:YES] forKey:QTMovieFlatten]
+                   error:nil];
         }
     }
 }
