@@ -8,6 +8,7 @@ Stomatick is lightweight program to assemble images to make a stop-motion video.
 
 Stomatick has been tested under :
  - MacBook2,1 running Mac OS X 10.6.8 (10K549)
+ - Rand0m hackintosh running Mac OS X 10.6.8 (10K549)
  
 ## Licence
  
