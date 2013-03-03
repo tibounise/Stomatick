@@ -165,7 +165,8 @@
                 [movie release];
                 movie = nil;
             } else {
-                [movie setCurrentTime:[movie duration]];
+                QTTime startAtZero = QTMakeTime(0,1);
+                [movie setCurrentTime:startAtZero];
                 [saveButton setEnabled:YES];
                 [runButton setEnabled:YES];
             }
