@@ -22,6 +22,7 @@
 @synthesize buildButton;
 @synthesize saveButton;
 @synthesize pathButton;
+@synthesize ETAlabel;
 
 - (void)dealloc {
     [super dealloc];
@@ -81,6 +82,9 @@
     [runButton setEnabled:NO];
     [fpsSlider setEnabled:NO];
     [pathButton setEnabled:NO];
+    
+    // Init label
+    [ETAlabel setStringValue:@"Gathering data for an ETA ..."];
     
     // Close the player window
     [playerWindow close];
@@ -142,14 +146,17 @@
             QTTime time = QTMakeTime(1,[fpsSlider integerValue]);
             
             int i = 0;
+            NSTimeInterval startTime = [[NSDate date] timeIntervalSince1970];
+            int usedFilesCount = usedFiles.count;
             
-            while (![buildThread isCancelled] && i < usedFiles.count) {
+            while (![buildThread isCancelled] && i < usedFilesCount) {
                 NSString *fileLocation = [NSString stringWithFormat:@"%@/%@",[path path],[usedFiles objectAtIndex:i]];
                 image = [[[NSImage alloc] initByReferencingFile:fileLocation] autorelease];
                 [movie addImage:image
                        forDuration:time
                        withAttributes:imageAttributes];
                 [progressBar setDoubleValue:i];
+                [ETAlabel setStringValue:[self getETA:startTime collection:usedFilesCount status:i]];
                 i++;
             }
             
@@ -174,7 +181,34 @@
     [fpsSlider setEnabled:YES];
     [pathButton setEnabled:YES];
     
+    // Reinit the label
+    [ETAlabel setStringValue:@"No job pending"];
+    
     [pool release];
+}
+
+-(NSString *)getETA:(int)startTime collection:(int)collection status:(int)status {
+    NSTimeInterval currentTime = [[NSDate date] timeIntervalSince1970];
+    if (status == 0) {
+        return [NSString stringWithFormat:@"Gathering data for an ETA ..."];
+    } else {
+        double estimatedRemaining = (currentTime - startTime) * collection / status;
+        div_t h = div(estimatedRemaining, 3600);
+        int hours = h.quot;
+        div_t m = div(h.rem, 60);
+        int minutes = m.quot;
+        int seconds = m.rem;
+        
+        if (hours == 0 && minutes == 0 && seconds < 5) {
+            return [NSString stringWithFormat:@"A few seconds remaining ..."];
+        } else if (hours == 0 && minutes == 0) {
+            return [NSString stringWithFormat:@"%d second(s) remaining ...",seconds];
+        } else if (hours == 0) {
+            return [NSString stringWithFormat:@"%d minute(s) %d seconds remaining ...",minutes,seconds];
+        } else {
+            return [NSString stringWithFormat:@"%d hour(s) %d minutes %d seconds remaining ...",hours,minutes,seconds];
+        }
+    }
 }
 
 - (IBAction)saveAnimation:(id)sender {

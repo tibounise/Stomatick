@@ -30,6 +30,7 @@
 @property (assign) IBOutlet NSButton *buildButton;
 @property (assign) IBOutlet NSButton *saveButton;
 @property (assign) IBOutlet NSButton *pathButton;
+@property (assign) IBOutlet NSTextField *ETAlabel;
 
 - (IBAction)pathChoose:(id)sender;
 - (IBAction)runAnimation:(id)sender;
@@ -39,5 +40,6 @@
 - (IBAction)cancelBuild:(id)sender;
 
 -(void)buildProcess;
+-(NSString *)getETA:(int)startTime collection:(int)collection status:(int)status;
 
 @end
