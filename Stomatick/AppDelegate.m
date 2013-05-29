@@ -98,6 +98,7 @@
     
     NSFileManager *fileMan = [NSFileManager defaultManager];
     NSArray *fileArray = [fileMan contentsOfDirectoryAtPath:[path path] error:&error];
+    fileArray = [fileArray sortedArrayUsingSelector:@selector(localizedCaseInsensitiveCompare:)];
     
     if (error != nil) {
         [[NSAlert alertWithError:error] runModal];
